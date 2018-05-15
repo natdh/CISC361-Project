@@ -19,7 +19,7 @@ using namespace std;
 #define LONG_TIME 9999
 
 /*Define the path of the input file*/
-#define FILE "/Users/natdh/Desktop/testInput"
+#define FILE "/Users/natdh/Desktop/sample_input.JSON"
 
 /*Possible statuses of nodes*/
 #define REJECTED "Rejected"
