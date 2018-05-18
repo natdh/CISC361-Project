@@ -11,7 +11,7 @@ system_test: system_test.o $(OBJS)
 	$(CC) $(CFLAGS) $^ -o $@
 	./$@
 
-intake_test: intake.o $(OBJS)
+intake_test: input_reader.o $(OBJS)
 	$(CC) $(CFLAGS) $^ -o $@
 	./$@ test.txt
 
