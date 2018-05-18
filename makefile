@@ -1,7 +1,7 @@
 CC = g++
 CFLAGS = -std=c++98 -g
 OBJS = system.o job.o process.o
-TESTS = system_test intake_test
+TESTS = system_test input_test
 
 default: intake.o
 
@@ -11,7 +11,7 @@ system_test: system_test.o $(OBJS)
 	$(CC) $(CFLAGS) $^ -o $@
 	./$@
 
-intake_test: input_reader.o $(OBJS)
+input_test: input_reader.o $(OBJS)
 	$(CC) $(CFLAGS) $^ -o $@
 	./$@ test.txt
 
